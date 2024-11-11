@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -15,8 +16,9 @@ const userSchema = new mongoose.Schema({
 const userData = mongoose.model("userData", userSchema);
 
 mongoose
-  .connect("mongodb://localhost:27017/RegisterForm")
-  .then(() => console.log("DB connected"));
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("DB connected"))
+  .catch((error) => console.log("connection error:", error));
 
 app.post("/api/submit", async (req, res) => {
   const { name, email, dob } = req.body.formData;
