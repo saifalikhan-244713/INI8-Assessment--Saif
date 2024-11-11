@@ -1,0 +1,124 @@
+#example {
+  margin: 0 auto;
+  border: 1px solid rgb(232, 225, 225);
+  border-radius: 15px;
+  width: 350px;
+}
+
+#formBox {
+  border-radius: 15px 15px 0 0;
+  padding: 20px 0;
+}
+
+#loggedUser {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#tableHeader {
+  font-family: "Lobster", sans-serif;
+  font-size: 1.7rem;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 0;
+}
+
+#registerForm {
+  text-align: center;
+}
+
+#registerForm h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 2.3rem;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+}
+
+#submitBtn {
+  width: 300px;
+  height: 37px;
+  padding: 0;
+  background-color: #dc8282;
+  color: white;
+}
+
+#submitBtn:hover {
+  background-color: #e74e4e;
+  border: none;
+  outline: none;
+}
+
+.formSpan {
+  width: 60px;
+}
+
+.inputBox {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.inputBoxField:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgb(213, 210, 210);
+}
+
+.parent {
+  padding-top: 140px;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.pencil {
+  margin-right: 5px;
+}
+
+.tableParent {
+  overflow: scroll;
+}
+
+.tableParent button {
+  width: 80px;
+}
+
+.trash {
+  margin-right: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 580px) {
+  #example {
+    margin: 0 auto;
+    border: 1px solid rgb(232, 225, 225);
+    border-radius: 15px;
+    width: 90vw;
+  }
+  #loggedUser {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90vw;
+    overflow-x: scroll;
+  }
+  .inputBox {
+    width: 82vw;
+  }
+  #submitBtn {
+    width: 82vw;
+  }
+  /* .tableParent {
+    overflow-x: scroll;
+  }
+  #inputBoxField{
+    width: 1;
+  } */
+}
